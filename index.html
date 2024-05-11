@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<nav id="navbar">
+			<header>Python Documentation</header>
+			<ul>
+				<li>
+					<a href="#Introduction" class="nav-link">Introduction</a>
+				</li>
+				<li>
+					<a href="#Beginners_guide" class="nav-link">Beginners guide</a>
+				</li>
+				<li>
+					<a href="#Variables" class="nav-link">Variables</a>
+				</li>
+				<li>
+					<a href="#Data_types" class="nav-link">Data types</a>
+				</li>
+				<li>
+					<a href="#Loops" class="nav-link">Loops</a>
+				</li>
+				<li>
+					<a href="#Function_declarations" class="nav-link">Function declarations</a>
+				</li>
+			</ul>
+		</nav>
+	
+		<main id="main-doc">
+			<section class="main-section" id="Introduction">
+				<header>Introduction</header>
+				<article>
+					<p>
+						Python is a high-level, interpreted programming language known for its simplicity and 
+						readability. It was created by Guido van Rossum and first released in 1991. Python's design 
+						philosophy emphasizes code readability with its notable use of significant whitespace.
+					</p>
+				  
+					<p>
+						Python is widely used in various fields, including web development, data science, artificial 
+						intelligence, scientific computing, and automation. It has a large standard library and a vibrant 
+						community, making it easy to find libraries and frameworks for almost any task.
+					</p>
+				  
+					<h2>Key Features of Python:</h2>
+				  
+					<ul>
+					  <li><strong>Simple and Easy-to-learn:</strong> Python syntax is clear and concise, making it an excellent choice for beginners.</li>
+					  <li><strong>Interpreted and Interactive:</strong> Python code is executed line by line, allowing for quick testing and debugging in an interactive shell.</li>
+					  <li><strong>High-level and Dynamically Typed:</strong> Python handles memory management and data types dynamically, allowing for rapid development without the need for type declarations.</li>
+					  <li><strong>Extensive Standard Library:</strong> Python comes with a rich set of built-in modules and packages, providing support for various tasks such as file I/O, networking, and data processing.</li>
+					  <li><strong>Community and Ecosystem:</strong> Python has a large and active community of developers who contribute to numerous open-source projects, libraries, and frameworks.</li>
+					</ul>
+				  
+					<p>Whether you're a beginner learning to code or an experienced developer working on complex projects, Python's versatility and ease of use make it a popular choice for software development.</p>
+				</article>
+			</section>
+			<section class="main-section" id="Beginners_guide">
+				<header>Beginners guide</header>
+				<article>
+					<p>
+						If you're new to programming or looking to learn your first programming language, Python is 
+						an excellent choice. Python is known for its simplicity and readability, making it 
+						beginner-friendly and widely used in various fields.
+					</p>
+					<ul>
+						<li><strong>Install Python:</strong> Start by installing Python on your computer. You can download the latest version of Python from the official website (https://www.python.org/downloads/). Follow the installation instructions for your operating system.</li>
+						<li><strong>Learn the Basics:</strong> Familiarize yourself with basic Python concepts such as variables, data types (e.g., integers, floats, strings), operators, and control flow statements (e.g., if-else, loops).</li>
+						<li><strong>Practice Coding:</strong> The best way to learn Python is by practicing coding. Write small programs, experiment with code, and solve coding challenges.</li>
+						<li><strong>Use Online Resources:</strong> There are plenty of online tutorials, courses, and documentation available to help you learn Python.</li>
+						<li><strong>Join a Community:</strong> Join online forums, discussion groups, or local meetups to connect with other Python enthusiasts and get help with your questions.</li>
+						<li><strong>Build Projects:</strong> Once you're comfortable with the basics, start building small projects to apply your knowledge and gain practical experience.</li>
+		
+					</ul>
+					
+					<div>
+						<pre><code>print("Hello, World!");</code></pre>
+					</div>
+					  
+					
+				</article>
+			</section>
+			<section class="main-section" id="Variables">
+				<header>Variables</header>
+				<article>
+					<p>In Python, variables are used to store data. They act as placeholders for different types of information, such as numbers, text, or more complex data structures.</p>
+					<p>Here's how you can define a variable in Python:</p>
+					<div>
+						<pre><code>variable_name = value</code></pre>
+						<strong>For example:</strong>
+						<pre><code>age = 25
+	name = "John"
+	is_student = True</code></pre>
+					</div>
+					<p>Python is dynamically typed, meaning you don't need to declare the type of a variable explicitly. Python infers the type based on the value assigned to it.</p>
+					<p>Variables can be reassigned to different values:</p>
+					<pre><code>age = 30</code></pre>
+					<p>And variables can hold different types of data:</p>
+					<pre><code>age = "thirty"</code></pre>
+					<strong>Python variable names:</strong>
+					<ul>
+						<li>Must start with a letter (a-z, A-Z) or underscore (_)</li>
+						<li>Can contain letters, digits (0-9), or underscores</li>
+						<li>Cannot be a keyword or built-in function name</li>
+						<li>Are case-sensitive (age, Age, and AGE are three different variables)</li>
+						<li>Variable names should be descriptive and meaningful to indicate the purpose of the variable.</li>
+					</ul>
+				</article>
+		
+			</section>
+			<section class="main-section" id="Data_types">
+				<header>Data types</header>
+				<article>
+					<p>In Python, data types represent the kind of value a variable can hold. Understanding data types is fundamental for writing Python programs.</p>
+					<p>Here are some common data types in Python:</p>
+					<ul>
+						<li><strong>Integer:</strong> Whole numbers, e.g., 5, -3, 0.</li>
+						<li><strong>Float:</strong> Numbers with a decimal point, e.g., 3.14, -0.5.</li>
+						<li><strong>String:</strong> Text enclosed within single (' ') or double (" ") quotes, e.g., 'hello', "world".</li>
+						<li><strong>Boolean:</strong> Represents True or False values, used in logical operations and conditions.</li>
+						<li><strong>List:</strong> Ordered collection of items, enclosed within square brackets ([ ]).</li>
+						<li><strong>Tuple:</strong> Similar to lists, but immutable (cannot be changed), enclosed within parentheses (( )).</li>
+						<li><strong>Dictionary:</strong> Collection of key-value pairs, enclosed within curly braces ({ }).</li>
+						<li><strong>Set:</strong> Unordered collection of unique items, enclosed within curly braces ({ }).</li>
+						<li><strong>None:</strong> Represents the absence of a value or a null value.</li>
+					</ul>
+					<strong>Here are some examples:</strong>
+					<div>
+						<pre><code>
+	age = 25  # Integer
+	height = 5.9  # Float
+	name = 'John'  # String
+	is_student = True  # Boolean
+	my_list = [1, 2, 3]  # List
+	my_tuple = (4, 5, 6)  # Tuple
+	my_dict = {'name': 'Alice', 'age': 30}  # Dictionary
+	my_set = {1, 2, 3}  # Set
+	empty_value = None  # None
+							</code></pre>
+					</div>
+					<p>Understanding and utilizing these data types efficiently is crucial for writing effective Python code.</p>
+				
+				</article>
+			</section>
+			<section class="main-section" id="Loops">
+				<header>Loops</header>
+				<article>
+					<p>In Python, loops are used to repeatedly execute a block of code until a certain condition is met. They are essential for automating repetitive tasks and iterating over data structures.</p>
+					<p>Types of loops in Python:</p>
+					<ul>
+						<li><strong>for loop:</strong> Executes a block of code for each item in a sequence.</li>
+						<li><strong>while loop:</strong> Executes a block of code as long as a specified condition is true.</li>
+						<li><strong>nested loop:</strong> A loop inside another loop, useful for iterating over multidimensional data structures.</li>
+						<li><strong>list comprehension:</strong> A concise way to create lists based on existing lists.</li>
+						<li><strong>generator:</strong> A special type of iterator that generates values on-the-fly, saving memory.</li>
+					</ul>
+					
+				
+					<p>Here's how a <strong>for loop</strong> works:</p>
+					<div>
+						<pre><code>
+		# Syntax:
+		for item in sequence:
+		# Code block to be executed for each item
+						</code></pre>
+					</div>
+	
+					<p>Example:</p>
+					<div>
+						<pre><code>
+		# Iterating over a list
+		fruits = ['apple', 'banana', 'cherry']
+		for fruit in fruits:
+		print(fruit)
+						</code></pre>
+					</div>
+	
+					<p>Here's how a <strong>while loop</strong> works:</p>
+					<div>
+						<pre><code>
+		# Syntax:
+		while condition:
+		# Code block to be executed as long as the condition is true
+						</code></pre>
+					</div>
+	
+					<p>Example:</p>
+					<div>
+						<pre><code>
+		# Printing numbers from 1 to 5 using a while loop
+		num = 1
+		while num <= 5:
+		print(num)
+		num += 1
+						</code></pre>
+					</div>
+					<p>Be cautious with loops to avoid infinite loops, where the loop condition is always true, causing the loop to run indefinitely.</p>
+				
+				</article>
+			</section>
+			<section class="main-section" id="Function_declarations">
+				<header>
+					Function declarations
+				</header>
+				<article>
+					<p>In Python, functions are blocks of reusable code that perform a specific task. They allow you to organize your code into smaller, manageable parts and promote code reusability.</p>
+					<p>Here's how you declare a function in Python:</p>
+					<div>
+						<pre><code>
+		def function_name(parameters):
+		# Code block defining the function's behavior
+		# May include statements, calculations, or other function calls
+		return result  # Optional, used to return a value
+							</code></pre>
+					</div>
+					<p>A function declaration consists of:</p>
+					<ul>
+						<li><strong>def:</strong> Keyword indicating the start of a function declaration.</li>
+						<li><strong>function_name:</strong> The name you give to your function, which should be descriptive of its purpose.</li>
+						<li><strong>parameters:</strong> Optional input values (arguments) that the function can accept. These are enclosed within parentheses.</li>
+						<li><strong>Code block:</strong> Indented block of code defining what the function does. This block may contain statements, calculations, or other function calls.</li>
+						<li><strong>return:</strong> Optional keyword used to return a value from the function. If omitted, the function returns None.</li>
+					</ul>
+					<p>Here's an example of a simple function:</p>
+					<div>
+						<pre><code>
+		def greet(name):
+			return "Hello, " + name + "!"
+							
+		# Calling the function
+		message = greet("Alice")
+		print(message)  # Output: Hello, Alice!
+						</code></pre>
+					</div>
+					<p>Functions are called by using their name followed by parentheses, optionally containing arguments. The value returned by the function can be stored in a variable or used directly.</p>
+				
+				</article>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
